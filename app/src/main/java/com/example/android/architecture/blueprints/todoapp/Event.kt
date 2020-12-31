@@ -17,6 +17,8 @@ package com.example.android.architecture.blueprints.todoapp
 
 import androidx.lifecycle.Observer
 
+// comment..
+
 /**
  * Used as a wrapper for data that is exposed via a LiveData that represents an event.
  */
