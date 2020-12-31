@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.architecture.blueprints.todoapp.tasks
+package com.example.android.architecture.blueprints.todoapp.viewmodel
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -25,16 +25,17 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.distinctUntilChanged
 import androidx.lifecycle.switchMap
 import androidx.lifecycle.viewModelScope
-import com.example.android.architecture.blueprints.todoapp.Event
-import com.example.android.architecture.blueprints.todoapp.R
+import com.example.android.architecture.blueprints.todoapp.*
 import com.example.android.architecture.blueprints.todoapp.data.Result
 import com.example.android.architecture.blueprints.todoapp.data.Result.Success
 import com.example.android.architecture.blueprints.todoapp.data.Task
 import com.example.android.architecture.blueprints.todoapp.data.source.TasksDataSource
 import com.example.android.architecture.blueprints.todoapp.data.source.TasksRepository
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksFilterType.ACTIVE_TASKS
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksFilterType.ALL_TASKS
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksFilterType.COMPLETED_TASKS
+import com.example.android.architecture.blueprints.todoapp.datastructures.Event
+import com.example.android.architecture.blueprints.todoapp.datastructures.TasksFilterType
+import com.example.android.architecture.blueprints.todoapp.datastructures.TasksFilterType.ACTIVE_TASKS
+import com.example.android.architecture.blueprints.todoapp.datastructures.TasksFilterType.ALL_TASKS
+import com.example.android.architecture.blueprints.todoapp.datastructures.TasksFilterType.COMPLETED_TASKS
 import kotlinx.coroutines.launch
 
 /**

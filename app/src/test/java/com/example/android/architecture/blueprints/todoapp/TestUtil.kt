@@ -17,11 +17,12 @@
 package com.example.android.architecture.blueprints.todoapp
 
 import androidx.lifecycle.LiveData
+import com.example.android.architecture.blueprints.todoapp.datastructures.Event
 import org.junit.Assert.assertEquals
 
 fun assertLiveDataEventTriggered(
-    liveData: LiveData<Event<String>>,
-    taskId: String
+        liveData: LiveData<Event<String>>,
+        taskId: String
 ) {
     val value = liveData.getOrAwaitValue()
     assertEquals(value.getContentIfNotHandled(), taskId)

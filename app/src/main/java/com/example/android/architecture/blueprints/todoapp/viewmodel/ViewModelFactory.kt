@@ -13,21 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.architecture.blueprints.todoapp
+package com.example.android.architecture.blueprints.todoapp.viewmodel
 
-import android.app.Application
 import android.os.Bundle
 import androidx.lifecycle.AbstractSavedStateViewModelFactory
 import androidx.lifecycle.SavedStateHandle
-import androidx.lifecycle.SavedStateViewModelFactory
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.savedstate.SavedStateRegistryOwner
-import com.example.android.architecture.blueprints.todoapp.addedittask.AddEditTaskViewModel
 import com.example.android.architecture.blueprints.todoapp.data.source.TasksRepository
-import com.example.android.architecture.blueprints.todoapp.statistics.StatisticsViewModel
-import com.example.android.architecture.blueprints.todoapp.taskdetail.TaskDetailViewModel
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksViewModel
 
 /**
  * Factory for all ViewModels.

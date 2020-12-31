@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.architecture.blueprints.todoapp.addedittask
+package com.example.android.architecture.blueprints.todoapp.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,10 +23,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.android.architecture.blueprints.todoapp.EventObserver
+import com.example.android.architecture.blueprints.todoapp.datastructures.EventObserver
 import com.example.android.architecture.blueprints.todoapp.R
 import com.example.android.architecture.blueprints.todoapp.databinding.AddtaskFragBinding
-import com.example.android.architecture.blueprints.todoapp.tasks.ADD_EDIT_RESULT_OK
+import com.example.android.architecture.blueprints.todoapp.ADD_EDIT_RESULT_OK
+import com.example.android.architecture.blueprints.todoapp.viewmodel.AddEditTaskViewModel
 import com.example.android.architecture.blueprints.todoapp.util.getViewModelFactory
 import com.example.android.architecture.blueprints.todoapp.util.setupRefreshLayout
 import com.example.android.architecture.blueprints.todoapp.util.setupSnackbar
@@ -72,7 +73,7 @@ class AddEditTaskFragment : Fragment() {
     private fun setupNavigation() {
         viewModel.taskUpdatedEvent.observe(this, EventObserver {
             val action = AddEditTaskFragmentDirections
-                .actionAddEditTaskFragmentToTasksFragment(ADD_EDIT_RESULT_OK)
+                    .actionAddEditTaskFragmentToTasksFragment(ADD_EDIT_RESULT_OK)
             findNavController().navigate(action)
         })
     }

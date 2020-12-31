@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.architecture.blueprints.todoapp.tasks
+package com.example.android.architecture.blueprints.todoapp.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -22,7 +22,8 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.architecture.blueprints.todoapp.data.Task
 import com.example.android.architecture.blueprints.todoapp.databinding.TaskItemBinding
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksAdapter.ViewHolder
+import com.example.android.architecture.blueprints.todoapp.adapters.TasksAdapter.ViewHolder
+import com.example.android.architecture.blueprints.todoapp.viewmodel.TasksViewModel
 
 /**
  * Adapter for the task list. Has a reference to the [TasksViewModel] to send actions back to it.

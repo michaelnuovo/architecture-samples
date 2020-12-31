@@ -25,9 +25,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
-import com.example.android.architecture.blueprints.todoapp.Event
+import com.example.android.architecture.blueprints.todoapp.datastructures.Event
 import com.example.android.architecture.blueprints.todoapp.R
-import com.example.android.architecture.blueprints.todoapp.ScrollChildSwipeRefreshLayout
+import com.example.android.architecture.blueprints.todoapp.views.ScrollChildSwipeRefreshLayout
 import com.google.android.material.snackbar.Snackbar
 
 /**
@@ -52,9 +52,9 @@ fun View.showSnackbar(snackbarText: String, timeLength: Int) {
  * Triggers a snackbar message when the value contained by snackbarTaskMessageLiveEvent is modified.
  */
 fun View.setupSnackbar(
-    lifecycleOwner: LifecycleOwner,
-    snackbarEvent: LiveData<Event<Int>>,
-    timeLength: Int
+        lifecycleOwner: LifecycleOwner,
+        snackbarEvent: LiveData<Event<Int>>,
+        timeLength: Int
 ) {
 
     snackbarEvent.observe(lifecycleOwner, Observer { event ->
@@ -65,8 +65,8 @@ fun View.setupSnackbar(
 }
 
 fun Fragment.setupRefreshLayout(
-    refreshLayout: ScrollChildSwipeRefreshLayout,
-    scrollUpChild: View? = null
+        refreshLayout: ScrollChildSwipeRefreshLayout,
+        scrollUpChild: View? = null
 ) {
     refreshLayout.setColorSchemeColors(
         ContextCompat.getColor(requireActivity(), R.color.colorPrimary),
