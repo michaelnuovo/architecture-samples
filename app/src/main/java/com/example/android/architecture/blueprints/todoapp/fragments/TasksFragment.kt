@@ -34,9 +34,9 @@ import com.example.android.architecture.blueprints.todoapp.adapters.TasksAdapter
 import com.example.android.architecture.blueprints.todoapp.data.Task
 import com.example.android.architecture.blueprints.todoapp.databinding.TasksFragBinding
 import com.example.android.architecture.blueprints.todoapp.datastructures.TasksFilterType
-import com.example.android.architecture.blueprints.todoapp.util.getViewModelFactory
-import com.example.android.architecture.blueprints.todoapp.util.setupRefreshLayout
-import com.example.android.architecture.blueprints.todoapp.util.setupSnackbar
+import com.example.android.architecture.blueprints.todoapp.util.ext.getViewModelFactory
+import com.example.android.architecture.blueprints.todoapp.util.ext.setupRefreshLayout
+import com.example.android.architecture.blueprints.todoapp.util.ext.setupSnackbar
 import com.example.android.architecture.blueprints.todoapp.viewmodel.TasksViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar

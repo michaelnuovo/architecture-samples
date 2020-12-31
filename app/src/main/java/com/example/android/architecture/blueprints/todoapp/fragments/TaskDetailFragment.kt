@@ -31,9 +31,9 @@ import com.example.android.architecture.blueprints.todoapp.R
 import com.example.android.architecture.blueprints.todoapp.databinding.TaskdetailFragBinding
 import com.example.android.architecture.blueprints.todoapp.DELETE_RESULT_OK
 import com.example.android.architecture.blueprints.todoapp.viewmodel.TaskDetailViewModel
-import com.example.android.architecture.blueprints.todoapp.util.getViewModelFactory
-import com.example.android.architecture.blueprints.todoapp.util.setupRefreshLayout
-import com.example.android.architecture.blueprints.todoapp.util.setupSnackbar
+import com.example.android.architecture.blueprints.todoapp.util.ext.getViewModelFactory
+import com.example.android.architecture.blueprints.todoapp.util.ext.setupRefreshLayout
+import com.example.android.architecture.blueprints.todoapp.util.ext.setupSnackbar
 import com.google.android.material.snackbar.Snackbar
 
 /**

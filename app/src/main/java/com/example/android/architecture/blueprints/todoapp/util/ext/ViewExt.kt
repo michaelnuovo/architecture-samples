@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.architecture.blueprints.todoapp.util
+package com.example.android.architecture.blueprints.todoapp.util.ext
 
 /**
  * Extension functions and Binding Adapters.
@@ -27,6 +27,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import com.example.android.architecture.blueprints.todoapp.datastructures.Event
 import com.example.android.architecture.blueprints.todoapp.R
+import com.example.android.architecture.blueprints.todoapp.util.EspressoIdlingResource
 import com.example.android.architecture.blueprints.todoapp.views.ScrollChildSwipeRefreshLayout
 import com.google.android.material.snackbar.Snackbar
 
